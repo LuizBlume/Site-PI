@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 180px;
+}
+
+.carousel-inner img {
+    max-height: 500px; /* Ajuste a altura máxima conforme necessário */
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transform: scale(0.8); /* Ajuste o fator de escala conforme necessário */
+}
+
+.navbar-toggler-icon {
+    border: none; /* Remove a borda */
+}
+ 
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
