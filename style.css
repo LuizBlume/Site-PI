@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+display: grid;
+    margin: 0;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "section section"
+    ;
+}
+
+nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: #F7F1F3;
+}
+
+li {
+    padding: 20px;
+    cursor: pointer;
+    list-style: none;
+}
+
+li:hover {
+    background-color: rgba(53, 53, 53, 0.7);
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 300px;
+    height: 100vh;
+    background-color: #161616;
+    padding: 20px;
+    transition: transform 0.3s ease;
+     margin-top: 9vh;
+}
+
+#menu-toggle:checked~.menu {
+    transform: translateX(-300px);
+}
+
+.menu-button {
+    margin: 20px;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    order: 2;
+}
+
+.bar {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #FFF;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.bar:nth-child(1) {
+    top: 0;
+}
+
+.bar:nth-child(2) {
+    top: 8px;
+}
+
+.bar:nth-child(3) {
+    top: 16px;
+}
+
+#menu-toggle:checked+.menu-button .bar:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+#menu-toggle:checked+.menu-button .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked+.menu-button .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+#menu-toggle:checked~.menu {
+    display: block;
+}
+
+nav a {
+    text-align: center;
+    font-size: 1.1em;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: #FFF;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+#logo img {
+    padding: 20px;
+}
+
+nav a {
+    text-align: center;
+}
+
+header {
+    background-color: black;
+    grid-area: header;
+    height: 150px;
+}
+
+a {
+    display: grid;
+    grid-template-columns: 200px 3fr;
+    font-size: 1.5em;
+}
