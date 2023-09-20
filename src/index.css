@@ -39,12 +39,12 @@ body {
 
 section {
     font-family: 'Oswald', sans-serif;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 70px;
     display: grid;
     grid-area: section;
     height: auto;
-    background-color: rgb(249, 249, 207);
+    background-color: rgb(29, 29, 29);
     grid-template-columns: 200px fr;
     font-size: 1.5em;
     padding: 20px;
@@ -52,11 +52,11 @@ section {
 
 section a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 section a:hover {
-    background-color: rgb(255, 255, 191);
+    background-color: rgb(37, 37, 37);
 }
 
 section h1 {
@@ -85,7 +85,7 @@ section p {
     margin: auto;
     width: 250px;
     border-radius: 50px 50px 0px 50px;
-    background: rgba(249, 249, 207, 0.8);
+    background: rgba(255, 255, 255, 0.6);
 }
 
 a {
@@ -103,7 +103,7 @@ nav {
     display: flex;
     position: relative;
     justify-content: space-between;
-    background-color: #F7F1F3;
+    background-color: #000000;
 }
 
 li {
@@ -157,7 +157,6 @@ li:hover {
     position: absolute;
     left: 0;
     transition: transform 0.3s ease;
-    color: #000;
 }
 
 .bar:nth-child(1) {
@@ -205,12 +204,13 @@ nav a {
     background-color: #000;
 }
 
-#logo img {
-    filter: invert(90%);
-}
-
-#logo img:hover {
-    scale: 1.1;
+#logo-foto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background-color: #000; 
 }
 
 #logo img {
