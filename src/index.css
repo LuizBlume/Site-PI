@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Makasar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 .containerindex {
     display: grid;
     margin: 0;
@@ -22,6 +21,7 @@ header {
 }
 
 main {
+    height: 5000px;
     height: auto;
     width: 100%;
 }
@@ -56,10 +56,6 @@ a {
     height: 620px;
 }
 
-img,
-p {
-    padding: 20px;
-}
 
 nav {
     display: flex;
@@ -194,7 +190,11 @@ figcaption {
 }
 
 h1 {
-    font-size: 1em;
+    margin: 20px 0;
+    font-size: 5em;
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+
 }
 
 #logo-pagina {
