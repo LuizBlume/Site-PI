@@ -27,6 +27,7 @@ nav {
     display: flex;
     position: relative;
     justify-content: space-between;
+    align-items: center;
     background-color: #000000;
 }
 
@@ -51,9 +52,8 @@ li:hover {
     width: 300px;
     height: 100vh;
     background-color: #161616;
-    padding: 20px;
+    padding: 90px 20px;
     transition: transform 0.3s ease;
-    margin-top: 9vh;
 }
 
 #menu-toggle:checked~.menu {
@@ -61,13 +61,14 @@ li:hover {
 }
 
 .menu-button {
-    margin: 20px;
+    margin: 20px 50px;
     display: inline-block;
     width: 30px;
     height: 20px;
     position: relative;
     cursor: pointer;
     order: 2;
+    z-index: 1;
 }
 
 .bar {
@@ -175,7 +176,7 @@ aside {
 }
 
 #frase-foto {
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 #img-aside {
@@ -187,7 +188,7 @@ aside {
 figure>img {
     display: block;
     margin: auto;
-    width: 50%;
+    width: 40%;
 }
 
 figcaption {
