@@ -22,7 +22,6 @@ header {
 
 main {
     height: 5000px;
-    height: auto;
     width: 100%;
 }
 
@@ -56,12 +55,21 @@ a {
     height: 620px;
 }
 
+.main-topics{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    height: 500px;
+    padding: 0 20%;
+}
 
 nav {
     display: flex;
     position: relative;
     justify-content: space-between;
     background-color: #000000;
+    align-items: center;
 }
 
 li {
@@ -177,7 +185,7 @@ nav a {
     padding: 20px;
 }
 
-nav a {
+nav a, main > h2 {
     text-align: center;
 }
 
@@ -190,11 +198,11 @@ figcaption {
 }
 
 h1 {
-    margin: 20px 0;
+    padding: 50px 0;
     font-size: 5em;
     font-family: 'Rock Salt', cursive;
     text-align: center;
-
+    border-bottom: 1px solid #cccccc;
 }
 
 #logo-pagina {
@@ -224,4 +232,30 @@ li {
 a {
 	color: #fff;
 	text-decoration: none;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    padding: 16px;
+    max-width: 300px;
+    margin: 0 0 20px 0;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #888;
+    margin: 4px 0;
 }
