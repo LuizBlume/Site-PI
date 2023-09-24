@@ -21,7 +21,7 @@ header {
 }
 
 main {
-    height: 5000px;
+    height: 2500px;
     width: 100%;
 }
 
@@ -258,4 +258,8 @@ a {
     font-size: 14px;
     color: #888;
     margin: 4px 0;
+}
+
+.card:hover{
+    background-color: rgb(245, 245, 245);
 }
