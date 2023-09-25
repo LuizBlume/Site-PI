@@ -21,8 +21,9 @@ header {
 }
 
 main {
-    height: 2500px;
+    height: auto;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 .intro {
@@ -60,7 +61,7 @@ a {
     justify-content: space-between;
     display: flex;
     text-align: center;
-    height: 500px;
+    height: auto;
     padding: 0 20%;
 }
 
@@ -161,15 +162,6 @@ nav a {
     font-family: 'Oswald', sans-serif;
     text-decoration: none;
     color: #FFF;
-}
-
-#logo {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    background-color: #000;
 }
 
 #logo-foto {
