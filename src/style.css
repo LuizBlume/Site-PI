@@ -162,24 +162,25 @@ main>h2 {
 main>h1 {
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-weight: 2000;
+    font-weight: 2000px;
     margin: 70px 0;
 }
 
 aside {
     grid-area: aside;
-    background-color: #F9F9CF;
-    border-radius: 20px;
+    background-color: #2b2b2b;
     padding: 30px;
-    align-items: flex-start;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
 }
 
 #frase-foto {
     margin-top: 80px;
 }
 
-#img-aside {
+.img-aside {
     width: 70%;
     height: auto;
     border-radius: 30px;
@@ -195,30 +196,26 @@ figcaption {
     text-align: center;
 }
 
-figure {
-    margin: 25px 0;
-}
-
 footer {
     grid-area: footer;
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
-	text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
 ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 li {
-	display: inline-block;
-	margin: 0 10px;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 a {
-	color: #fff;
-	text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }

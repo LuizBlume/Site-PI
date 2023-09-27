@@ -127,6 +127,8 @@ li:hover {
     transition: transform 0.3s ease;
 }
 
+
+
 .bar:nth-child(1) {
     top: 0;
 }
@@ -204,10 +206,11 @@ h1 {
 
 footer {
     grid-area: footer;
-	background-color: #333;
+	background-color: #000000;
 	color: #fff;
 	padding: 20px;
 	text-align: center;
+    display: block;
 }
 
 ul {
@@ -254,4 +257,28 @@ a {
 
 .card:hover{
     background-color: rgb(245, 245, 245);
+}
+#copy{
+    display: block;
+}
+
+.content-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+#h1footer{
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+
+}
+
+.Participantes a{
+    font-size: 0.5em;
+}
+#letra {
+    color: #000;
 }
