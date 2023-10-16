@@ -32,7 +32,7 @@ nav {
 }
 
 li {
-    padding: 20px;
+    width: 100%;
     cursor: pointer;
     list-style: none;
 }

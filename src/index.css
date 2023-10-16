@@ -74,7 +74,6 @@ nav {
 }
 
 li {
-    padding: 20px;
     cursor: pointer;
     list-style: none;
 }
@@ -218,10 +217,12 @@ ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+    display: flex;
+    text-align: center;
+    
 }
 
 li {
-	display: inline-block;
 	margin: 0 10px;
 }
 
@@ -266,6 +267,7 @@ a {
 .content-footer{
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid gray;
 }
 
 #h1footer{
