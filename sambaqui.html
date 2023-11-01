@@ -5,45 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="src/imagens/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/index.css">
     <title>Bonus: Sambaqui</title>
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="header bg-dark">
+        <img class="logo" src="src/imagens/logo.png" alt="" />
         <nav>
-          <div id="logo">
-            <a href="index.html"
-              ><img src="src/imagens/logo.png" alt="" id="logo-foto"
-            /></a>
-          </div>
-
-          <input type="checkbox" id="menu-toggle" />
-          <label for="menu-toggle" class="menu-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </label>
-          <ul class="menu">
-            <li id="pagina1.html">
-              <a href="arte-contemporanea.html">Arte Contemporânea</a>
+          <ul class="lista-nav">
+            <li id="link-home"><a href="index.html">HOME</a></li>
+            <li>
+              <a href="#">TÓPICOS<span id="seta-baixo">&darr;</span></a>
+              <ul class="dropdown">
+                <li id="margin-top-dropdown"><a href="arte-contemporanea.html">Arte Contemporânea</a></li>
+                <li class="link-dropdown"id="linkArtemoderna"><a href="arte-moderna.html">Arte Moderna</a></li>
+                <li class="link-dropdown" id="linkExpressoes"><a href="expressoes.html">Expressões Artistícas</a></li>
+                <li class="link-dropdown" id="linkModernismo"><a href="modernismo.html">Modernismo</a></li>
+                <li id="link-dropdown-excessao"><a href="musica.html">Música</a></li>
+                <li class="link-dropdown" id="linkSintaxe"><a href="sintaxe.html">Sintaxe</a></li>
+                <li class="link-dropdown" id="linkVanguardas"><a href="vanguardas.html">Vanguardas Artisticas</a></li>
+              </ul>
             </li>
-            <li id="pagina2.html">
-              <a href="arte-moderna.html">Semana da arte moderna</a>
-            </li>
-            <li id="pagina3.html">
-              <a href="vanguardas.html">As vanguardas artísticas européias</a>
-            </li>
-            <li id="pagina4.html"><a href="modernismo.html">Modernismo</a></li>
-            <li id="pagina5.html">
-              <a href="sintaxe.html">Sintaxe da linguagem visual</a>
-            </li>
-            <li id="pagina6.html">
-              <a href="expressoes.html">Expressões Artistícas Regionais</a>
-            </li>
-            <li id="pagina7.html"><a href="musica.html">A Música</a></li>
-            <li id="sambaqui.html"><a href="sambaqui.html">Sambaqui</a></li>
-          </ul>
-        </nav>
+          </nav>
       </header>
       <main>
         <h1>SAMBAQUIS</h1>

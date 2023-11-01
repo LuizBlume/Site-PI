@@ -1,11 +1,11 @@
 let egito = document.getElementById("margin-top-dropdown");
-let irlandesa = document.getElementById("linkIrlandesa");
-let grecia = document.getElementById("linkGrecia");
-let geral = document.getElementById("linkGeral");
-let japonesa = document.getElementById("linkJaponesa");
+let expressoes = document.getElementById("linkExpressoes");
+let moderna = document.getElementById("linkArtemoderna");
+let sambaqui = document.getElementById("linksambaqui");
+let modernismo = document.getElementById("linkModernismo");
 let hindu = document.getElementById("linkHindu");
-let nordica = document.getElementById("linkNordica");
-let romana = document.getElementById("linkRomana");
+let sintaxe = document.getElementById("linkSintaxe");
+let vanguardas = document.getElementById("linkVanguardas");
 let mesopotamia = document.getElementById("link-dropdown-excessao");
 let mitologia = document.getElementById("link-mitologia");
 let sairLogin = document.getElementById("link-sair");
@@ -18,19 +18,6 @@ function mouseSair() {
     }, 300);
 }
 
-document.getElementById("link-home").addEventListener("mouseleave", mouseSair);
-
-if (mitologia !== null) {
-    function mouseSairMitologia() {
-        let elementoGrecia = document.getElementById("link-mitologia");
-        elementoGrecia.classList.add("mouseSaiuMitologia");
-        setTimeout(() => {
-            elementoGrecia.classList.remove("mouseSaiuMitologia");
-        }, 300)
-    }
-
-    document.getElementById("link-mitologia").addEventListener("mouseleave", mouseSairMitologia);
-}
 
 if (egito !== null) {
     function sairEgipcia() {
@@ -45,52 +32,52 @@ if (egito !== null) {
     document.getElementById("margin-top-dropdown").addEventListener("mouseleave", sairEgipcia);
 }
 
-if (irlandesa !== null) {
+if (expressoes !== null) {
     function sairIrlanda() {
-        let elementoIrlandesa = document.getElementById("linkIrlandesa");
-        elementoIrlandesa.classList.add("saiuIrlandesa");
+        let elementoexpressoes = document.getElementById("linkExpressoes");
+        elementoexpressoes.classList.add("saiuexpressoes");
         setTimeout(() => {
-            elementoIrlandesa.classList.remove("saiuIrlandesa");
+            elementoexpressoes.classList.remove("saiuexpressoes");
         }, 300);
     }
 
-    document.getElementById("linkIrlandesa").addEventListener("mouseleave", sairIrlanda);
+    document.getElementById("linkExpressoes").addEventListener("mouseleave", sairIrlanda);
 }
 
-if (grecia !== null) {
-    function sairGrecia() {
-        let elementoGrecia = document.getElementById(`linkGrecia`);
-        elementoGrecia.classList.add("saiuGrecia");
+if (moderna !== null) {
+    function sairmoderna() {
+        let elementomoderna = document.getElementById(`linkArtemoderna`);
+        elementomoderna.classList.add("saiumoderna");
         setTimeout(() => {
-            elementoGrecia.classList.remove("saiuGrecia");
+            elementomoderna.classList.remove("saiumoderna");
         }, 300);
     }
 
-    document.getElementById("linkGrecia").addEventListener("mouseleave", sairGrecia);
+    document.getElementById("linkArtemoderna").addEventListener("mouseleave", sairmoderna);
 }
 
-if (geral !== null) {
-    function sairGeral() {
-        let elementoGeral = document.getElementById("linkGeral");
-        elementoGeral.classList.add("saiuGeral");
+if (sambaqui !== null) {
+    function sairsambaqui() {
+        let elementosambaqui = document.getElementById("linksambaqui");
+        elementosambaqui.classList.add("saiusambaqui");
         setTimeout(() => {
-            elementoGeral.classList.remove("saiuGeral");
+            elementosambaqui.classList.remove("saiusambaqui");
         }, 300);
     }
 
-    document.getElementById("linkGeral").addEventListener("mouseleave", sairGeral);
+    document.getElementById("linksambaqui").addEventListener("mouseleave", sairsambaqui);
 }
 
-if (japonesa !== null) {
-    function sairJaponesa() {
-        let elementoJaponesa = document.getElementById("linkJaponesa");
-        elementoJaponesa.classList.add("saiuJaponesa");
+if (modernismo !== null) {
+    function sairmodernismo() {
+        let elementomodernismo = document.getElementById("linkModernismo");
+        elementomodernismo.classList.add("saiumodernismo");
         setTimeout(() => {
-            elementoJaponesa.classList.remove("saiuJaponesa");
+            elementomodernismo.classList.remove("saiumodernismo");
         }, 300);
     }
 
-    document.getElementById("linkJaponesa").addEventListener("mouseleave", sairJaponesa);
+    document.getElementById("linkModernismo").addEventListener("mouseleave", sairmodernismo);
 }
 
 if (hindu !== null) {
@@ -105,28 +92,28 @@ if (hindu !== null) {
     document.getElementById("linkHindu").addEventListener("mouseleave", sairHindu);
 }
 
-if (nordica !== null) {
-    function sairNordica() {
-        let elementoNordica = document.getElementById("linkNordica");
-        elementoNordica.classList.add("saiuNordica");
+if (sintaxe !== null) {
+    function sairsintaxe() {
+        let elementosintaxe = document.getElementById("linkSintaxe");
+        elementosintaxe.classList.add("saiusintaxe");
         setTimeout(() => {
-            elementoNordica.classList.remove("saiuNordica");
+            elementosintaxe.classList.remove("saiusintaxe");
         }, 300);
     }
 
-    document.getElementById("linkNordica").addEventListener("mouseleave", sairNordica);
+    document.getElementById("linkSintaxe").addEventListener("mouseleave", sairsintaxe);
 }
 
-if (romana !== null) {
-    function sairRomana() {
-        let elementoRomana = document.getElementById("linkRomana");
-        elementoRomana.classList.add("saiuRomana");
+if (vanguardas !== null) {
+    function sairvanguardas() {
+        let elementovanguardas = document.getElementById("linkVanguardas");
+        elementovanguardas.classList.add("saiuvanguardas");
         setTimeout(() => {
-            elementoRomana.classList.remove("saiuRomana");
+            elementovanguardas.classList.remove("saiuvanguardas");
         }, 300);
     }
 
-    document.getElementById("linkRomana").addEventListener("mouseleave", sairRomana);
+    document.getElementById("linkVanguardas").addEventListener("mouseleave", sairvanguardas);
 }
 
 if (mesopotamia !== null) {

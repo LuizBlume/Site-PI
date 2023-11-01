@@ -228,6 +228,9 @@ a {
     main {
       padding: 40px;
     }
+    aside {
+        display: none;
+    }
   }
   
   @media screen and (max-width: 768px) {
@@ -240,6 +243,9 @@ a {
     }
     .dropdown {
         z-index: 10000 !important;
+    }
+    aside {
+        display: none;
     }
   }
   
@@ -258,5 +264,8 @@ a {
   
     .menu-button {
       margin: 10px 20px;
+    }
+    aside {
+        display: none;
     }
   }
