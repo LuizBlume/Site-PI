@@ -219,3 +219,44 @@ a {
     color: #fff;
     text-decoration: none;
 }
+
+@media screen and (max-width: 1024px) {
+    .container {
+      grid-template-columns: 100%;
+    }
+  
+    main {
+      padding: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    main {
+      padding: 20px;
+    }
+    .logo {
+        width: 150px !important;
+        height: 100px !important;
+    }
+    .dropdown {
+        z-index: 10000 !important;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .menu {
+      width: 80%; 
+    }
+  
+    nav {
+      padding: 10px;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  
+    .menu-button {
+      margin: 10px 20px;
+    }
+  }
