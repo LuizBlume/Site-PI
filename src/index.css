@@ -1,434 +1,358 @@
-html {
-    overflow-x:hidden
-}
-
 * {
-    padding: 0;
     margin: 0;
-    height: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    height: auto;
-}
 
 header {
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
-    background-color: #000 !important;
-}
-
-.logo {
-    width: 200px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
+    padding: 20px;
     align-items: center;
 }
 
-footer {
-    grid-area: footer;
-    background-color: black;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+header ul {
+    display: flex;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    display: inline-block;
+header li {
     margin: 0 10px;
 }
 
-a {
-    color: #fff !important;
+li {
+    list-style: none;
+
+}
+
+header img {
+    width: 150px;
+}
+
+header a {
     text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 nav {
     display: flex;
+    align-items: center;
 }
 
-
-header::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: #000;
+nav>* {
+    margin: 0 10px;
 }
 
-.lista-nav {
+.topicos {
+    display: block;
+}
+
+section .titulo p {
+    font-size: 9.2em;
+    font-weight: bolder;
+    font-stretch: ultra-expanded;
+    color: rgb(0, 0, 0);
+    background: url(imagens/arte-contemporanea/arte-contemporanea.jpg) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 120px;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+.secao-inicial {
     display: flex;
-    justify-content: flex-start;
-    list-style: none;
-    padding: 20px 0 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
 }
 
-.lista-nav>li>a {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+.secao-inicial,
+.introducao {
+    padding: 10px 25vw;
+    font-size: 1.2em;
+
 }
 
-ul.dropdown {
-    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
-    padding: 8px;
-    z-index: 9999 !important;
-    background-color: #000 !important;
+section img {
+    width: 500px;
 }
 
-ul {
-    list-style: none;
-    z-index: 9999 !important;
+section h1 {
+    font-size: 3em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-ul li {
-    display: inline-block;
-    position: relative;
-}
-
-ul li a {
+.introducao {
+    background-color: white;
     display: block;
-    padding: 10px 40px;
+    border-bottom: 1px solid rgb(189, 189, 189);
+
+}
+
+#secao {
+    padding: 59px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.card img {
+    height: 200px;
+}
+
+.card {
+    margin: 20px;
+}
+
+footer {
+    background-color: black;
     color: #ffffff;
+    text-align: center;
+    padding: 20px;
+
+}
+
+footer a {
     text-decoration: none;
-    text-align: left;
-    font-size: 16px;
-    z-index: 9999 !important;
+    color: #ffffff;
 }
 
-ul li ul.dropdown li {
-    display: block;
-    z-index: 9999 !important;
+footer a:hover {
+    color: rgb(146, 146, 146);
 }
 
-ul li ul.dropdown {
-    width: 100%;
-    position: absolute;
-    z-index: 9999 !important;
+footer p {
+    background-color: rgb(63, 63, 63);
+}
+
+.hamburger-menu {
     display: none;
 }
 
-ul li:hover ul.dropdown {
-    display: block;
-    z-index: 9999 !important;
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
 
-ul li ul.dropdown a {
-    opacity: 0.5;
-}
-
-
-ul li ul.dropdown a:hover {
-    opacity: 1;
-    color: #000;
-}
-
-.dropdown>li>a {
-    padding: 10px 50px 10px 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.dropdown>#margin-top-dropdown>a {
-    margin-top: 20px;
-}
-
-#seta-baixo {
-    display: inline-block;
-    position: relative;
-    bottom: 2px;
-}
-
-#link-home>a,
-#link-mitologia>a,
-#link-sair>a {
-    padding-bottom: 8px;
-}
-
-#link-home:hover::after,
-#link-sair:hover::after {
-    content: "";
-    height: 2px;
-    background-color: #3064c5;
-    margin-left: 20px;
-    display: block;
-    width: 70%;
-    transition: .5s;
-    animation-name: hover-animation;
-    animation-duration: .2s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-}
-
-@keyframes hover-animation {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 70%;
-    }
-}
-
-.buttonResponder>input[type=button],
-.buttonResponder>input[type=submit] {
-    border: none;
-    background-color: #3027da;
-    color: #fff;
-    width: 150%;
-    padding: 20px;
+html {
     font-size: 18px;
-    border-radius: 37px;
+}
+
+body {
+    overflow-x: hidden;
+    touch-action: pan-y;
+    /* Desativa gestos de deslizar para a esquerda/direita */
+    overscroll-behavior-x: none;
+    /* Impede a rolagem elástica horizontal */
+}
+
+label .menu {
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    background: #000000;
+    border-radius: 50% 50% 50% 50%;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 0 0 #000000, 0 0 0 0 #000000;
     cursor: pointer;
+
 }
 
-@keyframes sair-animation {
-    0% {
-        width: 70%;
-        height: 2px;
-    }
-
-    100% {
-        width: 0%;
-        height: 2px;
-    }
-}
-
-#link-mitologia:hover::after {
-    content: "";
+label .hamburger {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    width: 30px;
     height: 2px;
-    background-color: #3064c5;
-    margin-left: 25px;
+    background: #ffffff;
     display: block;
-    width: 80%;
-    transition: .5s;
-    animation-name: hover-animation;
-    animation-duration: .2s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
-.mouseSaiuMitologia::after {
+label .hamburger:after,
+label .hamburger:before {
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
     content: "";
-    background-color: #3064c5;
-    margin-left: 25px;
-    display: block;
-    animation-name: sair-animation-grecia;
-    animation-duration: .3s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-}
-
-@keyframes sair-animation-grecia {
-    0% {
-        width: 80%;
-        height: 2px;
-    }
-
-    100% {
-        width: 0%;
-        height: 2px;
-    }
-}
-
-.dropdown>li>a {
-    padding: 8px 8px;
-}
-
-#margin-top-dropdown:hover::after,
-#linkArtemoderna:hover::after,
-#linkHindu:hover::after,
-#linkExpressoes:hover::after,
-#linkSintaxe:hover::after,
-#linkGeral:hover::after,
-#linkVanguardas:hover::after {
-    content: "";
-    height: 2px;
-    background-color: #3064c5;
+    position: absolute;
     display: block;
     width: 100%;
-    animation-name: dropdown-animations;
-    animation-duration: .3s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
+    height: 100%;
+    background: #ffffff;
 }
 
-@keyframes dropdown-animations {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
+label .hamburger:before {
+    top: -10px;
 }
 
-#link-dropdown-excessao:hover::after {
-    content: "";
-    height: 2px;
-    background-color: #3064c5;
+label .hamburger:after {
+    bottom: -10px;
+}
+
+label input {
+    display: none;
+}
+
+label input:checked+.menu {
+    box-shadow: 0 0 0 100vw #000000, 0 0 0 100vh #000000;
+    border-radius: 0;
+
+}
+
+label input:checked+.menu .hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+}
+
+label input:checked+.menu .hamburger:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
+
+}
+
+label input:checked+.menu .hamburger:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+
+}
+
+label input:checked+.menu+ul {
+    opacity: 1;
+}
+
+label ul {
+    z-index: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: .25s 0s ease-in-out;
+    transition: .25s 0s ease-in-out;
     display: block;
-    width: 100%;
-    animation-name: dropdown-excessao-animation;
-    animation-duration: .2s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
+    text-align: center;
 }
 
-@keyframes dropdown-excessao-animation {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-.saiuEgipcia::after,
-.saiuGrecia::after,
-.saiuGeral::after,
-.saiuHindu::after,
-.saiuIrlandesa::after,
-.saiuNordica::after,
-.saiuRomana::after {
-    content: "";
-    background-color: #3064c5;
-    width: 100%;
+label a {
+    margin-bottom: 1em;
     display: block;
-    animation-name: sair-dropdown-animations;
-    animation-duration: .2s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
+    color: #ffffff;
+    text-decoration: none;
+
 }
 
-@keyframes sair-dropdown-animations {
-    0% {
-        width: 100%;
-        height: 2px;
-    }
+/* RESPONSIVIDADE */
 
-    100% {
-        width: 0%;
-        height: 2px;
-    }
-}
+/* Estilos para telas menores, como celulares */
+@media only screen and (max-width: 767px) {
 
-.saiuMesopotamia::after {
-    content: "";
-    background-color: #3064c5;
-    display: block;
-    width: 100%;
-    animation-name: sair-dropdown-excessao;
-    animation-duration: .2s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-}
-
-@keyframes sair-dropdown-excessao {
-    0% {
-        width: 100%;
-        height: 2px;
-    }
-
-    100% {
-        width: 0%;
-        height: 2px;
-    }
-}
-
-@media (min-width: 1027px) {
-    .dropdown {
+    .hamburger-menu {
         display: block;
     }
 
-    .dropdown li {
+    .btn,
+    #link-home {
+        display: none;
+    }
+
+    .secao-inicial {
         display: block;
-        z-index: 9999;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1023px) {
-    .header {
-        padding: 30px;
-    }
-
-    .lista-nav {
-        display: block;
-        z-index: 9999;
-    }
-
-    .lista-nav ul {
+        justify-content: center;
         text-align: center;
-        z-index: 9999;
     }
 
-    .lista-nav li {
-        display: inline;
-        margin-right: 20px;
-        z-index: 9999;
+    .secao-inicial h1 {
+        display: none;
     }
 
-    .logo {
-        width: auto;
-    }
-
-    .dropdown {
+    .hamburger {
         display: block;
-        z-index: 9999 !important;
     }
 
-    aside {
+    .secao-inicial,
+    .introducao {
+        padding: 10px 10vw;
+
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+
+}
+
+
+/* Estilos para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .tudoArte {
+        display: none;
+    }
+
+    .secao-inicial {
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .secao-inicial h1 {
+        display: none;
+    }
+
+    .secao-inicial,
+    .introducao {
+        padding: 10px 10vw;
+        font-size: 1.1em;
+
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hamburger-menu {
         display: none;
     }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
-    .header {
-        padding: 20px;
+@media screen and (min-width: 1024px) and (max-width: 1370px) {
+
+    .secao-inicial,
+    .introducao {
+        padding: 10px 20vw;
+        font-size: 1em;
+
     }
 
-    .lista-nav {
-        display: block;
-    }
-
-    .logo {
-        width: 100%;
-    }
-
-    .dropdown {
-        display: block;
-    }
-
-    aside {
-        display: none;
-    }
-}
-
-@media (max-width: 425px) {
-    .header {
-        padding: 10px;
-    }
-
-    .lista-nav {
-        display: block;
-    }
-
-    .logo {
-        width: 100%;
-    }
-
-    .dropdown {
-        display: block;
-    }
-
-    aside {
+    .hamburger-menu {
         display: none;
     }
 }

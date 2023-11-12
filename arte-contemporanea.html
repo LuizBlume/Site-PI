@@ -7,30 +7,55 @@
     <link rel="stylesheet" href="src/style.css" />
     <link rel="stylesheet" href="src/index.css">
     <title>Arte Contemporânea</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
 
   <body>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
     <div class="container">
-      <header class="header bg-dark">
-        <img class="logo" src="src/imagens/logo.png" alt="" />
+      <header>
+        <img src="src/imagens/logo.png" alt="">
         <nav>
-          <ul class="lista-nav">
-            <li id="link-home"><a href="index.html">HOME</a></li>
-            <li>
-              <a href="#">TÓPICOS<span id="seta-baixo">&darr;</span></a>
-              <ul class="dropdown">
-                <li id="margin-top-dropdown"><a href="sambaqui.html">Sambaqui </a></li>
-                <li class="link-dropdown"id="linkArtemoderna"><a href="arte-moderna.html">Arte Moderna</a></li>
-                <li class="link-dropdown" id="linkExpressoes"><a href="expressoes.html">Expressões Artistícas</a></li>
-                <li class="link-dropdown" id="linkModernismo"><a href="modernismo.html">Modernismo</a></li>
-                <li id="link-dropdown-excessao"><a href="musica.html">Música</a></li>
-                <li class="link-dropdown" id="linkSintaxe"><a href="sintaxe.html">Sintaxe</a></li>
-                <li class="link-dropdown" id="linkVanguardas"><a href="vanguardas.html">Vanguardas Artisticas</a></li>
-              </ul>
-            </li>
-          </nav>
-      </header>
+
+            <label class="hamburger-menu">
+                <input type="checkbox">
+                <span class="menu"> <span class="hamburger"></span> </span>
+                <ul>
+                    <li><a href="arte-contemporanea.html">Arte Contemporânea</a></li>
+                    <li><a href="arte-moderna.html">Arte Moderna</a></li>
+                    <li><a href="expressoes.html">Exrpessões artísticas</a></li>
+                    <li><a href="modernismo.html">Modernismo</a></li>
+                    <li><a href="musica.html">Música</a></li>
+                    <li><a href="sambaqui.html">Sambaquis</a></li>
+                    <li><a href="sintaxe.html">Elementos da sintaxe</a></li>
+                    <li><a href="vanguardas.html">Vanguardas artísticas</a></li>
+                </ul>
+            </label>
+            <a id="link-home" href="index.html">Home</a>
+
+            <div>
+                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tópicos
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+
+                    <ul class="topicos text-end ">
+                        <li><a class="dropdown-item" href="arte-contemporanea.html">Arte Contemporânea</a></li>
+                        <li><a class="dropdown-item" href="arte-moderna.html">Arte Moderna</a></li>
+                        <li><a class="dropdown-item" href="expressoes.html">Exrpessões artísticas</a></li>
+                        <li><a class="dropdown-item" href="modernismo.html">Modernismo</a></li>
+                        <li><a class="dropdown-item" href="musica.html">Música</a></li>
+                        <li><a class="dropdown-item" href="sambaqui.html">Sambaquis</a></li>
+                        <li><a class="dropdown-item" href="sintaxe.html">Elementos da sintaxe</a></li>
+                        <li><a class="dropdown-item" href="vanguardas.html">Vanguardas artísticas</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+    </header>
       <main>
         <h1>Arte Contemporânea</h1>
         <p>
