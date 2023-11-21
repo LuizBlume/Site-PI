@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="src/imagens/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="src/index.css">
-    <title>Vanguardas Artistícas</title>
-  </head>
-  <body>
-    <div class="container">
-      <header class="header bg-dark">
-        <img class="logo" src="src/imagens/logo.png" alt="" />
-        <nav>
-          <ul class="lista-nav">
-            <li id="link-home"><a href="index.html">HOME</a></li>
-            <li>
-              <a href="#">TÓPICOS<span id="seta-baixo">&darr;</span></a>
-              <ul class="dropdown">
-                <li id="margin-top-dropdown"><a href="arte-contemporanea.html">Arte Contemporânea</a></li>
-                <li class="link-dropdown"id="linkArtemoderna"><a href="arte-moderna.html">Arte Moderna</a></li>
-                <li class="link-dropdown" id="linkExpressoes"><a href="expressoes.html">Expressões Artistícas</a></li>
-                <li class="link-dropdown" id="linkModernismo"><a href="modernismo.html">Modernismo</a></li>
-                <li id="link-dropdown-excessao"><a href="musica.html">Música</a></li>
-                <li class="link-dropdown" id="linkSintaxe"><a href="sintaxe.html">Sintaxe</a></li>
-                <li class="link-dropdown" id="linkSambaqui"><a href="sambaqui.html">Sambaqui</a></li>
-              </ul>
-            </li>
-          </nav>
-      </header>
 
-      <main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arte Contemporânea</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/index.css">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+  <header>
+    <img src="src/imagens/logo.png" alt="">
+    <nav>
+
+      <label class="hamburger-menu">
+        <input type="checkbox">
+        <span class="menu"> <span class="hamburger"></span> </span>
+        <ul>
+          <li><a href="arte-contemporanea.html">Arte Contemporânea</a></li>
+          <li><a href="arte-moderna.html">Arte Moderna</a></li>
+          <li><a href="expressoes.html">Exrpessões artísticas</a></li>
+          <li><a href="modernismo.html">Modernismo</a></li>
+          <li><a href="musica.html">Música</a></li>
+          <li><a href="sambaqui.html">Sambaquis</a></li>
+          <li><a href="sintaxe.html">Elementos da sintaxe</a></li>
+          <li><a href="vanguardas.html">Vanguardas artísticas</a></li>
+        </ul>
+      </label>
+      <a id="link-home" href="index.html">Home</a>
+
+      <div>
+        <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Tópicos
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+
+          <ul class="topicos text-end ">
+            <li><a class="dropdown-item" href="arte-contemporanea.html">Arte Contemporânea</a></li>
+            <li><a class="dropdown-item" href="arte-moderna.html">Arte Moderna</a></li>
+            <li><a class="dropdown-item" href="expressoes.html">Exrpessões artísticas</a></li>
+            <li><a class="dropdown-item" href="modernismo.html">Modernismo</a></li>
+            <li><a class="dropdown-item" href="musica.html">Música</a></li>
+            <li><a class="dropdown-item" href="sambaqui.html">Sambaquis</a></li>
+            <li><a class="dropdown-item" href="sintaxe.html">Elementos da sintaxe</a></li>
+            <li><a class="dropdown-item" href="vanguardas.html">Vanguardas artísticas</a></li>
+          </ul>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-8">
         <h1>AS VANGUARDAS ARTÍSTICAS EUROPEIAS</h1>
 
         <p>
@@ -104,8 +128,8 @@
           Artísticas Européias, tendo em base como o seus tópicos abordados o
           Cubismo, Dadaísmo, Surrealismo, Futurismo e Expressionismo.
         </p>
-      </main>
-      <aside>
+      </div>
+      <div class="col-sm-4">
         <figure>
           <img
             src="src/imagens/vanguardas/lbqq0yv7.bmp"
@@ -141,21 +165,23 @@
           />
           <figcaption>Giacomo Balla - Dinamismo de um cão na coleira, 1912</figcaption>
         </figure>
-      </aside>
-
-      <footer>
-        <ul>
-          <li><a href="#">Termos de uso</a></li>
-          <li>
-            <a href="footer/politica-priv.html"
-              >Política de privacidade</a
-            >
-          </li>
-          <li><a href="#">Sobre nós</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-        <p>&copy; 2023 - Todos os direitos reservados</p>
-      </footer>
+      </div>
     </div>
-  </body>
+  </div>
+  <footer>
+    <ul>
+      <li><a href="#">Termos de uso</a></li>
+      <li>
+        <a href="footer/politica-priv.html">Política de privacidade</a>
+      </li>
+      <li><a href="#">Sobre nós</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+    <p>&copy; 2023 - Todos os direitos reservados</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

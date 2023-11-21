@@ -1,0 +1,82 @@
+img {
+    width: 100%;
+}
+.col-sm-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(65, 65, 65);
+}
+.col-sm-4 > figure > img {
+    width: 100% !important;
+    border-radius: 20px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.figcaption-texto {
+    color: rgb(0, 0, 0) !important;
+}
+figcaption {
+    color: white !important;
+}
+@media only screen and (max-width: 425px) {
+    body {
+      font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+  
+    header {
+      padding: 10px;
+    }
+  
+    header img {
+      width: 100px; /* Ajuste o tamanho do logotipo conforme necessário */
+    }
+  
+    header nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 10px;
+    }
+  
+    header nav>* {
+      margin: 10px 0;
+    }
+  
+    header .hamburger-menu {
+      display: block;
+    }
+  
+    .dropdown-menu {
+      position: static;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .topicos {
+      text-align: left;
+    }
+  
+    .secao-inicial,
+    .introducao,
+    .cards,
+    aside {
+      padding: 10px;
+    }
+  
+    section img,
+    aside img {
+      width: 100%;
+    }
+  
+    .frase-foto {
+      display: none;
+    }
+  
+    footer ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
