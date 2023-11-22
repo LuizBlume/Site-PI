@@ -275,7 +275,7 @@ label a {
 
     .btn,
     #link-home {
-        display: none;
+        display: none !important;
     }
 
     .secao-inicial {
